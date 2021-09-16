@@ -61,6 +61,13 @@ class TextStyles {
     fontSize: 20.0,
   );
 
+  static const TextStyle HintText = const TextStyle(
+    fontWeight: FontWeight.w300,
+    color: Colors.white24,
+    fontStyle: FontStyle.normal,
+    fontSize: 18.0,
+  );
+
   static const TextStyle ButtonText = const TextStyle(
     fontWeight: FontWeight.w300,
     color: Colors.white,

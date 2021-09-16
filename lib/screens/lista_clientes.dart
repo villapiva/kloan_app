@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:kloanapp/models/clientes.dart';
-import 'package:kloanapp/screens/muestra_cliente.dart';
+import 'package:kloanapp/screens/inluye_cliente.dart';
 import 'package:kloanapp/utils/database_helper.dart';
 import 'package:sqflite/sqflite.dart';
 import 'dart:async';
@@ -155,7 +155,7 @@ class _ListaClientesState extends State<ListaClientes> {
                                   }),
                             );
                           }),
-                    ) //performSearch(clienteList, _query)
+                    )//, performSearch(clienteList, _query);
             ],
           ),
         ),
@@ -203,7 +203,7 @@ class _ListaClientesState extends State<ListaClientes> {
     final result = await Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => ClienteDetail(cliente),
+          builder: (context) => incluyeCliente(cliente),
         ));
   }
 }
